@@ -1,5 +1,5 @@
 function Projects(props) {
-  return <h1>Projects</h1>;
+  return <h1>Projects space</h1>;
 }
 
 export default Projects;

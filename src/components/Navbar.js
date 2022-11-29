@@ -1,6 +1,6 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Layout = () => {
+const Navbar = () => {
   return (
     <>
       <nav>
@@ -14,12 +14,13 @@ const Layout = () => {
           <li>
             <Link to="/français">Français</Link>
           </li>
+          <li>
+            <Link to="/cinema">Cinema</Link>
+          </li>
         </ul>
       </nav>
-
-      <Outlet />
     </>
   );
 };
 
-export default Layout;
+export default Navbar;

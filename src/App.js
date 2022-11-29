@@ -1,22 +1,24 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./utils/Layout";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import NoPage from "./views/NoPage";
 import Home from "./views/Home";
 import Projects from "./views/Projects";
 import Français from "./views/Français";
+import Cinema from "./views/Cinema";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home name="Jack" />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="français" element={<Français />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+        <Route index element={<Home name="Home" />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="français" element={<Français />} />
+        <Route path="cinema" element={<Cinema />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
+      <Outlet />
     </BrowserRouter>
   );
 }
