@@ -12,6 +12,7 @@ module.exports = {
     "prettier",
   ],
   overrides: [],
+  ignorePatterns: [".eslintrc.js"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
