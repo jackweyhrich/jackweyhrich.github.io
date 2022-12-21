@@ -3,18 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "google",
-    "prettier",
-  ],
+  extends: ["plugin:react/recommended", "plugin:react/jsx-runtime", "prettier"],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["prettier", "only-warn"],
+  plugins: ["prettier"],
   rules: {
     // "prettier/prettier": ["error"],
     "require-jsdoc": 0,
