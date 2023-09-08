@@ -4,7 +4,7 @@ interface Props {
   name: string
 }
 function Home({name}: Props): JSX.Element {
-  return <h1>Hello, {name}</h1>;
+  return <h1 className="font-bold underline">Hello, {name}</h1>;
 }
 
 
